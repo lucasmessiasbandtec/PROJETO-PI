@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RepTech</title>
+</head>
+<body style="background-image: url(fundo3.png); background-repeat: no-repeat; background-size: 100%">
+   
+<center> <div style="font-size: 60px; margin-top: 270px">Os sensores disponíveis na RepTech tem a capacidade de leitura de até 20m </div></center>    
+
+<center>
+<br>
+
+<div style="font-size: 30px"> Quantidade de sensores que você deseja: </div>
+<br>
+<input type="number" name="" id="qtd_sensor" style="font-size: x-large">
+
+<br><br>
+
+<button onclick="calcular()"; style="font-size: x-large">Calcular orçamento</button>
+
+<br>
+
+
+   <h2><div id="divmensaguem" style="display: none;"></div></h2>
+
+</center>
+    
+</body>
+</html>
+<script>
+
+    function calcular(){
+        var var1 = (qtd_sensor.value * 15) + 100;
+
+alert(`O seu orçamento será de R$${var1}`) 
+
+div_mensagem.style.display = 'block';
+
+}
+</script>
