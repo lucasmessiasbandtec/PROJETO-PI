@@ -2,13 +2,13 @@ create database reptech;
 
 use reptech;
 
-create table usuarios(
-idpessoas int primary key auto_increment,
-nomes varchar (40),
-endereço varchar (40),
-telefone char (11),
-email varchar (40),
-animal varchar (40)
+CREATE TABLE usuarios (
+    idpessoas INT PRIMARY KEY AUTO_INCREMENT,
+    nomes VARCHAR(40),
+    endereço VARCHAR(40),
+    telefone CHAR(11),
+    email VARCHAR(40),
+    animal VARCHAR(40)
 );
 
 insert into usuarios values
@@ -20,17 +20,22 @@ insert into usuarios values
 (null,'Princesa Diana ','Favela do Sapo','11456748609','princesinha.didi@gmail.com','Jabuti Ipiranga'),
 (null,'Virginia Hall','Guarapiranga','11234578498','virgem.hall@gmail.com','tracajá');
 
-select * from usuarios;
+SELECT 
+    *
+FROM
+    usuarios;
 
-delete from cadastro where idpessoas = 1;
+DELETE FROM cadastro 
+WHERE
+    idpessoas = 1;
 
-select * from cadastro;
+SELECT * FROM cadastro;
 
 drop table cadastro;
 
-create table  d29_05_2019(
-hora varchar (7),
-temperatura varchar(5)
+CREATE TABLE d29_05_2019 (
+    hora VARCHAR(7),
+    temperatura VARCHAR(5)
 );
 
 insert into d29_05_2019 values
@@ -60,4 +65,7 @@ insert into d29_05_2019 values
 ('23:00','28°'),
 ('24:00','30°');
 
-select * from d29_05_2019;
+SELECT 
+    *
+FROM
+    d29_05_2019;
